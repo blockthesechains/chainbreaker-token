@@ -21,11 +21,17 @@ Written as Solidity tests with `forge-std`, run through Hardhat 3:
 
 ## Running locally
 
-```shell
-npm install
-npx hardhat compile
-npx hardhat test
-```
+    npm install
+    npx hardhat compile
+    npx hardhat test
+
+## Deploying
+
+Deployment uses Hardhat Ignition. To deploy to a local simulated network:
+
+    npx hardhat ignition deploy ignition/modules/Chainbreaker.ts
+
+The initial supply defaults to 1,000,000 CHBK and can be changed with the `initialSupply` parameter.
 
 ## Tech
 
